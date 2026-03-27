@@ -1,0 +1,78 @@
+@import "@fontsource/inter/700.css";
+@import "@fontsource/lexend/400.css";
+@import "@fontsource/lexend/500.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base light + uma cor accent (identidade) */
+    --background: 0.985 0.004 286;
+    --foreground: 0.23 0.015 286;
+    --card: 1 0 0;
+    --card-foreground: 0.23 0.015 286;
+    --popover: 1 0 0;
+    --popover-foreground: 0.23 0.015 286;
+    --primary: 0.56 0.21 299;
+    --primary-foreground: 0.99 0 0;
+    --secondary: 0.96 0.01 286;
+    --secondary-foreground: 0.32 0.018 286;
+    --muted: 0.965 0.006 286;
+    --muted-foreground: 0.47 0.015 286;
+    --accent: 0.94 0.02 299;
+    --accent-foreground: 0.32 0.018 286;
+    --destructive: 0.62 0.21 25;
+    --border: 0.9 0.008 286;
+    --input: 0.9 0.008 286;
+    --ring: 0.56 0.21 299;
+    --radius: 0.95rem;
+    --radius-md: var(--radius);
+    --chart-1: 0.56 0.21 299;
+    --chart-2: 0.62 0.13 240;
+    --chart-3: 0.66 0.12 150;
+    --chart-4: 0.72 0.15 80;
+    --chart-5: 0.64 0.18 20;
+    --sidebar: 0.985 0.004 286;
+    --sidebar-foreground: 0.23 0.015 286;
+    --sidebar-primary: 0.56 0.21 299;
+    --sidebar-primary-foreground: 0.99 0 0;
+    --sidebar-accent: 0.96 0.01 286;
+    --sidebar-accent-foreground: 0.23 0.015 286;
+    --sidebar-border: 0.9 0.008 286;
+    --sidebar-ring: 0.56 0.21 299;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    min-height: 100%;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "Lexend", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+    margin: 0;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply text-foreground;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+}
